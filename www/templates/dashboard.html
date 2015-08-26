@@ -1,0 +1,26 @@
+<ion-view view-title="Dashboard" name="dashboard-view">
+	<ion-nav-buttons side ="right">
+		<button class="button icon-left ion-log-out button-stable" ng-click="logout()">Logout</button>
+	</ion-nav-buttons>
+	<ion-content class="padding">
+		<div class="row">
+			<div class="col text-center">
+				<h3>Welcome {{username}}!</h3>
+				<p>This could be your dashboard</p><br><br><br>	
+				<button class="button button-full button-positive" ng-click="performValidRequest()">
+					Make valid request
+				</button>
+				<button class="button button-full button-energized" ng-click="performUnauthorizedRequest()">
+					Make an unauthorized request
+				</button>
+				<button class="button button-full button-assertive" ng-click="performInvalidRequest()">
+					Make an unauthenticated request
+				</button>
+				{{response}}
+			</div>
+
+				
+
+		</div>
+	</ion-content>
+</ion-view>
